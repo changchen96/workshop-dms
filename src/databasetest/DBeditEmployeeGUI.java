@@ -5,6 +5,8 @@
  */
 package databasetest;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -254,6 +256,7 @@ public class DBeditEmployeeGUI extends javax.swing.JFrame {
         String telno = jTextFieldTelNo.getText();
         String role = jComboBoxRole.getSelectedItem().toString();
         DBcontroller.updateEmployees(id, name, address, telno, role);
+        JOptionPane.showMessageDialog(this, "Data saved!");
     }//GEN-LAST:event_jButtonSaveActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
